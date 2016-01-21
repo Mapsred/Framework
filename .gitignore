@@ -1,0 +1,8 @@
+*~
+core/orm/*
+core/2index.php
+core/Container.php
+core/Model.php
+core/Page.php
+
+

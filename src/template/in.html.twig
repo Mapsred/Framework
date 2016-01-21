@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Symfony!</title>
+</head>
+<body>
+<h1>{{ page_title }}</h1>
+
+<ul id="navigation">
+    {% for item in navigation %}
+    <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+    {% endfor %}
+</ul>
+
+Vous venez de créer votre premier template avec {{ moteur_name }} !
+</body>
+</html>
