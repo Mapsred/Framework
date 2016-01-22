@@ -1,4 +1,5 @@
 <?php
+//TODO réussir à utiliser $twig dans src/project/index.php
 session_start();
 define('DIR_CONF', dirname(__DIR__."/config"));
 $dirroot = explode('/',DIR_CONF);
