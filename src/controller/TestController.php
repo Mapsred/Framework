@@ -2,8 +2,7 @@
 
 class TestController
 {
-  public function bonjour()
-  {
+  public function bonjour() {
     return '<h1>Bonjour</h1>';
   }
   public function bjr(){
@@ -15,4 +14,10 @@ class TestController
         include_once "../src/project/index.php";
         return "OK";
     }
+
+    public function argu($args = null){
+        include_once "../src/view/argu.php";
+        return "OK";
+    }
+
 }

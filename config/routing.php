@@ -3,7 +3,8 @@
 global $routes;
 
 $routes = array(
-  '/test/bonjour/ok' => 'Test:bonjour',
-  '/test/bjr/ok' => 'Test:bjr',
+  '/test/bonjour' => 'Test:bonjour',
+  '/test/bjr' => 'Test:bjr',
   '/test/tw' => 'Test:tw',
+  '/test/argu' => 'Test:argu',
   );

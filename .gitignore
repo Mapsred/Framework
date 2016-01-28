@@ -5,4 +5,4 @@ core/Container.php
 core/Model.php
 core/Page.php
 core/router.php
-
+vendor

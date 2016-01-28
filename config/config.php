@@ -1,5 +1,5 @@
 <?php
-//TODO réussir à utiliser $twig dans src/project/index.php
+//TODO Fonction paramètres GET dans l'URL Rewriting
 session_start();
 define('DIR_CONF', dirname(__DIR__."/config"));
 $dirroot = explode('/',DIR_CONF);
@@ -16,13 +16,8 @@ define('DIR_TMPL', DIR_SRC.'/template');
 define('DIR_VIEW', DIR_SRC.'/view');
 define('DIR_WEB', DIR_ROOT.'web');
 define('DIR_VENDOR', DIR_ROOT.'vendor');
+define('DIR_APP', DIR_ROOT.'app');
+define('DIR_LOG', DIR_APP.'/logs');
 require_once(DIR_CONF.'/routing.php');
-//include_once(DIR_VENDOR.'/twig/twig/lib/Twig/Autoloader.php');
-include_once (DIR_VENDOR."/autoload.php");
-//Twig_Autoloader::register();
-
-global $twig;
-$loader = new Twig_Loader_Filesystem(DIR_TMPL); // Dossier contenant les templates
-$twig = new Twig_Environment($loader, array(
-    'cache' => false
-));
+require_once(DIR_CONF."/logs.php");
+require_once(DIR_VENDOR."/autoload.php");
