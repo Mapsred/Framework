@@ -7,6 +7,9 @@ $root = "";
 for ($i = 0; $i < count($dirroot)-1; $i++) {
     $root.=$dirroot[$i]."/";
 }
+/**
+ * Création des constantes de chemin d'accès pour les différents dossiers à utiliser
+ */
 define('DIR_ROOT', $root); //A déjà le / de fin
 define('DIR_CORE', DIR_ROOT.'core');
 define('DIR_SRC', DIR_ROOT.'src');
@@ -17,6 +20,16 @@ define('DIR_WEB', DIR_ROOT.'web');
 define('DIR_VENDOR', DIR_ROOT.'vendor');
 define('DIR_APP', DIR_ROOT.'app');
 define('DIR_LOG', DIR_APP.'/logs');
+define('DIR_ORM', DIR_APP.'/orm');
+/**
+ * Require des fichier nécessaires au fonctionnement
+ */
 require_once(DIR_CONF.'/routing.php');
 require_once(DIR_CONF."/logs.php");
 require_once(DIR_VENDOR."/autoload.php");
+require_once(DIR_ORM."/vendor/autoload.php");
+/**
+ * Instance de l'ORM avec la base de données
+ */
+$Connection = new \ORM\Connection('5.135.191.187', 'orm', 'maps_red', '9aEuULSDQtyJMbK2');
+$EntityManager = new \ORM\Entity\Manager();

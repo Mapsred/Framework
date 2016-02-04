@@ -1,0 +1,20 @@
+{
+    "name": "droxyum/supinternet-orm",
+    "description": "School project",
+    "authors": [
+        {
+            "name": "Droxyum",
+            "email": "contact@alexandresimonet.fr"
+        }
+    ],
+    "require": {
+        "symfony/yaml": "^2.7",
+        "droxyum/supinternet-orm": "dev-master"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "ORM\\" : "src/",
+            "Entity\\" : "Entity/"
+        }
+    }
+}

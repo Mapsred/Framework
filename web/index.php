@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Require fichier config
+ * Require fichier Router
+ * On décompose le chemin d'accès et on l'envoie au routeur
+ * Ce fichier est la base obligatoire du projet grâce au .htaccess
+ */
 require_once('../config/config.php');
 require_once('../core/Router.php');
 $uri = $_SERVER['REQUEST_URI'];
@@ -20,4 +25,6 @@ for ($i = 1; $i < count($qq); $i++) {
 $router = new Router();
 $response = $router->run($route);
 
-echo $response;
+if ($response !== FALSE && $response !== TRUE) {
+    echo $response;
+}
