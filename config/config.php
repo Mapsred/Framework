@@ -1,5 +1,4 @@
 <?php
-//TODO Fonction paramètres GET dans l'URL Rewriting
 session_start();
 define('DIR_CONF', dirname(__DIR__."/config"));
 $dirroot = explode('/',DIR_CONF);

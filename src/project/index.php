@@ -6,8 +6,10 @@
  * Time: 13:01
  */
     require_once('../config/config.php');
+//    var_dump($_GET);
     global $twig;
     $template = $twig->loadTemplate('in.html.twig');
     echo $template->render(array(
-        'moteur_name' => 'Twig'
+        'moteur_name' => 'Twig',
+        'title' => "Le titre"
     ));
