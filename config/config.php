@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 define('DIR_CONF', dirname(__DIR__."/config"));
 $dirroot = explode('/',DIR_CONF);
@@ -28,8 +29,4 @@ require_once(DIR_CONF.'/routing.php');
 require_once(DIR_CONF."/logs.php");
 require_once(DIR_VENDOR."/autoload.php");
 require_once(DIR_ORM."/vendor/autoload.php");
-/**
- * Instance de l'ORM avec la base de données
- */
-$Connection = new \ORM\Connection('5.135.191.187', 'orm', 'maps_red', '9aEuULSDQtyJMbK2');
-$EntityManager = new \ORM\Entity\Manager();
+require_once(DIR_CONF."/ormInstance.php");

@@ -7,6 +7,7 @@
  * Time: 16:00
  */
 
+use src\controller;
 /**
  * Class OrmController
  * Second controller pour le test de l'ORM

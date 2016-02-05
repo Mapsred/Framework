@@ -1,0 +1,193 @@
+\hypertarget{classTwig__TokenStream}{}\section{Twig\+\_\+\+Token\+Stream Class Reference}
+\label{classTwig__TokenStream}\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTwig__TokenStream_a5d3f6f0c9703ad488e0fd6677ad64052}{\+\_\+\+\_\+construct} (array \$tokens, \$filename=null)
+\item 
+\hyperlink{classTwig__TokenStream_a99d5d23c3b14ead14b96b4944a28a0f1}{\+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries inject\+Tokens} (array \$tokens)\hypertarget{classTwig__TokenStream_a92782cbe3a6d3b4a77dd1acab653b1b5}{}\label{classTwig__TokenStream_a92782cbe3a6d3b4a77dd1acab653b1b5}
+
+\item 
+\hyperlink{classTwig__TokenStream_ad33f66b241070b5f43523bc1d8a04511}{next} ()
+\item 
+\hyperlink{classTwig__TokenStream_a02822b90457dcb5fcb11ce7685da92ce}{next\+If} (\$primary, \$secondary=null)
+\item 
+\hyperlink{classTwig__TokenStream_a03fd6343727a8e1ca89ac071485f118c}{expect} (\$type, \$value=null, \$message=null)
+\item 
+\hyperlink{classTwig__TokenStream_a0f770769036131f910756b0cf174fed7}{look} (\$number=1)
+\item 
+\hyperlink{classTwig__TokenStream_aba7e51cc1fc2feffc1e62ba4cbf66a7b}{test} (\$primary, \$secondary=null)
+\item 
+\hyperlink{classTwig__TokenStream_a15c535a83e27a74bf1ee441e494f13dd}{is\+E\+OF} ()
+\item 
+\hyperlink{classTwig__TokenStream_ab3fc859937886ef0f828349c4309b1a6}{get\+Current} ()
+\item 
+\hyperlink{classTwig__TokenStream_a47310c25e033be5068ac5def6fb9c188}{get\+Filename} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$tokens}\hypertarget{classTwig__TokenStream_ab7805233c38d96511dd10ade3adc5203}{}\label{classTwig__TokenStream_ab7805233c38d96511dd10ade3adc5203}
+
+\item 
+{\bfseries \$current} = 0\hypertarget{classTwig__TokenStream_ad94d59735e5b619243fe7a4c908b4184}{}\label{classTwig__TokenStream_ad94d59735e5b619243fe7a4c908b4184}
+
+\item 
+{\bfseries \$filename}\hypertarget{classTwig__TokenStream_a2efc7da5c713a143e41b7450e1ebef14}{}\label{classTwig__TokenStream_a2efc7da5c713a143e41b7450e1ebef14}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a token stream.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(array \$tokens, \$filename=null)}{__construct(array $tokens, $filename=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{array}]{\$tokens, }
+\item[{}]{\$filename = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a5d3f6f0c9703ad488e0fd6677ad64052}{}\label{classTwig__TokenStream_a5d3f6f0c9703ad488e0fd6677ad64052}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & An array of tokens \\
+\hline
+string & {\em \$filename} & The name of the filename which tokens are associated with \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+to\+String()}{__toString()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::\+\_\+\+\_\+to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a99d5d23c3b14ead14b96b4944a28a0f1}{}\label{classTwig__TokenStream_a99d5d23c3b14ead14b96b4944a28a0f1}
+Returns a string representation of the token stream.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!expect@{expect}}
+\index{expect@{expect}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{expect(\$type, \$value=null, \$message=null)}{expect($type, $value=null, $message=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::expect (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$value = {\ttfamily null}, }
+\item[{}]{\$message = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a03fd6343727a8e1ca89ac071485f118c}{}\label{classTwig__TokenStream_a03fd6343727a8e1ca89ac071485f118c}
+Tests a token and returns it or throws a syntax error.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__Token}{Twig\+\_\+\+Token} 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!get\+Current@{get\+Current}}
+\index{get\+Current@{get\+Current}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Current()}{getCurrent()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::get\+Current (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_ab3fc859937886ef0f828349c4309b1a6}{}\label{classTwig__TokenStream_ab3fc859937886ef0f828349c4309b1a6}
+Gets the current token.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__Token}{Twig\+\_\+\+Token} 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!get\+Filename@{get\+Filename}}
+\index{get\+Filename@{get\+Filename}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Filename()}{getFilename()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::get\+Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a47310c25e033be5068ac5def6fb9c188}{}\label{classTwig__TokenStream_a47310c25e033be5068ac5def6fb9c188}
+Gets the filename associated with this stream.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!is\+E\+OF@{is\+E\+OF}}
+\index{is\+E\+OF@{is\+E\+OF}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{is\+E\+O\+F()}{isEOF()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::is\+E\+OF (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a15c535a83e27a74bf1ee441e494f13dd}{}\label{classTwig__TokenStream_a15c535a83e27a74bf1ee441e494f13dd}
+Checks if end of stream was reached.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!look@{look}}
+\index{look@{look}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{look(\$number=1)}{look($number=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::look (
+\begin{DoxyParamCaption}
+\item[{}]{\$number = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a0f770769036131f910756b0cf174fed7}{}\label{classTwig__TokenStream_a0f770769036131f910756b0cf174fed7}
+Looks at the next token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__Token}{Twig\+\_\+\+Token} 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!next@{next}}
+\index{next@{next}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_ad33f66b241070b5f43523bc1d8a04511}{}\label{classTwig__TokenStream_ad33f66b241070b5f43523bc1d8a04511}
+Sets the pointer to the next token and returns the old one.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__Token}{Twig\+\_\+\+Token} 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!next\+If@{next\+If}}
+\index{next\+If@{next\+If}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{next\+If(\$primary, \$secondary=null)}{nextIf($primary, $secondary=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::next\+If (
+\begin{DoxyParamCaption}
+\item[{}]{\$primary, }
+\item[{}]{\$secondary = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_a02822b90457dcb5fcb11ce7685da92ce}{}\label{classTwig__TokenStream_a02822b90457dcb5fcb11ce7685da92ce}
+Tests a token, sets the pointer to the next one and returns it or throws a syntax error.
+
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Token$\vert$null The next token if the condition is true, null otherwise 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}!test@{test}}
+\index{test@{test}!Twig\+\_\+\+Token\+Stream@{Twig\+\_\+\+Token\+Stream}}
+\subsubsection[{\texorpdfstring{test(\$primary, \$secondary=null)}{test($primary, $secondary=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Token\+Stream\+::test (
+\begin{DoxyParamCaption}
+\item[{}]{\$primary, }
+\item[{}]{\$secondary = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__TokenStream_aba7e51cc1fc2feffc1e62ba4cbf66a7b}{}\label{classTwig__TokenStream_aba7e51cc1fc2feffc1e62ba4cbf66a7b}
+Tests the current token.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/Token\+Stream.\+php\end{DoxyCompactItemize}

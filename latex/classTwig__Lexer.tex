@@ -1,0 +1,187 @@
+\hypertarget{classTwig__Lexer}{}\section{Twig\+\_\+\+Lexer Class Reference}
+\label{classTwig__Lexer}\index{Twig\+\_\+\+Lexer@{Twig\+\_\+\+Lexer}}
+Inheritance diagram for Twig\+\_\+\+Lexer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTwig__Lexer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env, array \$options=array())\hypertarget{classTwig__Lexer_ae09d3b5e91997ed682ce517339c75472}{}\label{classTwig__Lexer_ae09d3b5e91997ed682ce517339c75472}
+
+\item 
+\hyperlink{classTwig__Lexer_a073857c95bd883cb7a816e30336e4bbf}{tokenize} (\$code, \$filename=null)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries S\+T\+A\+T\+E\+\_\+\+D\+A\+TA} = 0\hypertarget{classTwig__Lexer_ab38f43e09a37211eac243807f09cedd5}{}\label{classTwig__Lexer_ab38f43e09a37211eac243807f09cedd5}
+
+\item 
+const {\bfseries S\+T\+A\+T\+E\+\_\+\+B\+L\+O\+CK} = 1\hypertarget{classTwig__Lexer_a4499c0096fc9eee38767cdd5983dc059}{}\label{classTwig__Lexer_a4499c0096fc9eee38767cdd5983dc059}
+
+\item 
+const {\bfseries S\+T\+A\+T\+E\+\_\+\+V\+AR} = 2\hypertarget{classTwig__Lexer_ad61cbf25cd9e48d54f8dd92d283e2602}{}\label{classTwig__Lexer_ad61cbf25cd9e48d54f8dd92d283e2602}
+
+\item 
+const {\bfseries S\+T\+A\+T\+E\+\_\+\+S\+T\+R\+I\+NG} = 3\hypertarget{classTwig__Lexer_a942d5c5aa18f98a7c41be904f69d48a9}{}\label{classTwig__Lexer_a942d5c5aa18f98a7c41be904f69d48a9}
+
+\item 
+const {\bfseries S\+T\+A\+T\+E\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+ON} = 4\hypertarget{classTwig__Lexer_a24b5a5ca398ed2e015365f6231643f44}{}\label{classTwig__Lexer_a24b5a5ca398ed2e015365f6231643f44}
+
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+N\+A\+ME} = \textquotesingle{}/\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}$\ast$/\+A\textquotesingle{}\hypertarget{classTwig__Lexer_a29de5833a0b18509a59087c81774d010}{}\label{classTwig__Lexer_a29de5833a0b18509a59087c81774d010}
+
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+N\+U\+M\+B\+ER} = \textquotesingle{}/\mbox{[}0-\/9\mbox{]}+(?\+:\textbackslash{}.\mbox{[}0-\/9\mbox{]}+)?/A\textquotesingle{}\hypertarget{classTwig__Lexer_aa93273c9cd19a2e5a3d9d985e9e06da3}{}\label{classTwig__Lexer_aa93273c9cd19a2e5a3d9d985e9e06da3}
+
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+S\+T\+R\+I\+NG} = \textquotesingle{}/\char`\"{}(\mbox{[}$^\wedge$\#\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$(?\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.\mbox{[}$^\wedge$\#\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$)$\ast$)\char`\"{}$\vert$\textbackslash{}\textquotesingle{}(\mbox{[}$^\wedge$\textbackslash{}\textquotesingle{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$(?\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.\mbox{[}$^\wedge$\textbackslash{}\textquotesingle{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$)$\ast$)\textbackslash{}\textquotesingle{}/As\textquotesingle{}\hypertarget{classTwig__Lexer_a7837b2870f8da343582f914996897336}{}\label{classTwig__Lexer_a7837b2870f8da343582f914996897336}
+
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+D\+Q\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+D\+E\+L\+IM} = \textquotesingle{}/\char`\"{}/A\textquotesingle{}\hypertarget{classTwig__Lexer_a4129b4f177cc831696e2fd0248d54c18}{}\label{classTwig__Lexer_a4129b4f177cc831696e2fd0248d54c18}
+
+\item 
+const {\bfseries R\+E\+G\+E\+X\+\_\+\+D\+Q\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+P\+A\+RT} = \textquotesingle{}/\mbox{[}$^\wedge$\#\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$(?\+:(?\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.$\vert$\#(?!\textbackslash{}\{))\mbox{[}$^\wedge$\#\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}$\ast$)$\ast$/As\textquotesingle{}\hypertarget{classTwig__Lexer_af9f1b30a470472bf711afcac31d7c839}{}\label{classTwig__Lexer_af9f1b30a470472bf711afcac31d7c839}
+
+\item 
+const {\bfseries P\+U\+N\+C\+T\+U\+A\+T\+I\+ON} = \textquotesingle{}()\mbox{[}$\,$\mbox{]}\{\}?\+:.,$\vert$\textquotesingle{}\hypertarget{classTwig__Lexer_a84893460ac4b5dbca37fcce1f5f73cff}{}\label{classTwig__Lexer_a84893460ac4b5dbca37fcce1f5f73cff}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries lex\+Data} ()\hypertarget{classTwig__Lexer_ac1c919ab80c7e1befca25586e93e9e04}{}\label{classTwig__Lexer_ac1c919ab80c7e1befca25586e93e9e04}
+
+\item 
+{\bfseries lex\+Block} ()\hypertarget{classTwig__Lexer_ae5188dcc5bed054d064b9be1f3d15113}{}\label{classTwig__Lexer_ae5188dcc5bed054d064b9be1f3d15113}
+
+\item 
+{\bfseries lex\+Var} ()\hypertarget{classTwig__Lexer_af07703b89876174efe925565a60856e2}{}\label{classTwig__Lexer_af07703b89876174efe925565a60856e2}
+
+\item 
+{\bfseries lex\+Expression} ()\hypertarget{classTwig__Lexer_ab090f7e2608811e081f2de511c36d599}{}\label{classTwig__Lexer_ab090f7e2608811e081f2de511c36d599}
+
+\item 
+{\bfseries lex\+Raw\+Data} (\$tag)\hypertarget{classTwig__Lexer_a1c3e18a478ada78ba425ed7395ec2f65}{}\label{classTwig__Lexer_a1c3e18a478ada78ba425ed7395ec2f65}
+
+\item 
+{\bfseries lex\+Comment} ()\hypertarget{classTwig__Lexer_a81826aa8f559ce89ecc4e502cfb26262}{}\label{classTwig__Lexer_a81826aa8f559ce89ecc4e502cfb26262}
+
+\item 
+{\bfseries lex\+String} ()\hypertarget{classTwig__Lexer_ad4183ec00d341cbad43df44153071504}{}\label{classTwig__Lexer_ad4183ec00d341cbad43df44153071504}
+
+\item 
+{\bfseries lex\+Interpolation} ()\hypertarget{classTwig__Lexer_a4806399e3eea73ccd586ab477ce84fbe}{}\label{classTwig__Lexer_a4806399e3eea73ccd586ab477ce84fbe}
+
+\item 
+{\bfseries push\+Token} (\$type, \$value= \textquotesingle{}\textquotesingle{})\hypertarget{classTwig__Lexer_a21d75667bfff284db746cdc74d56d977}{}\label{classTwig__Lexer_a21d75667bfff284db746cdc74d56d977}
+
+\item 
+{\bfseries move\+Cursor} (\$text)\hypertarget{classTwig__Lexer_a9da57af6ed37896367949273606961c1}{}\label{classTwig__Lexer_a9da57af6ed37896367949273606961c1}
+
+\item 
+{\bfseries get\+Operator\+Regex} ()\hypertarget{classTwig__Lexer_aa6a30e4a8edd366772cfc3994bc221fe}{}\label{classTwig__Lexer_aa6a30e4a8edd366772cfc3994bc221fe}
+
+\item 
+{\bfseries push\+State} (\$state)\hypertarget{classTwig__Lexer_aa4d38056986860cd0d67eb4953ac80ee}{}\label{classTwig__Lexer_aa4d38056986860cd0d67eb4953ac80ee}
+
+\item 
+{\bfseries pop\+State} ()\hypertarget{classTwig__Lexer_a27883ea0089b17183eb61b675d654b60}{}\label{classTwig__Lexer_a27883ea0089b17183eb61b675d654b60}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$tokens}\hypertarget{classTwig__Lexer_a1ddc1d50b5cbea7720d5bcef33549244}{}\label{classTwig__Lexer_a1ddc1d50b5cbea7720d5bcef33549244}
+
+\item 
+{\bfseries \$code}\hypertarget{classTwig__Lexer_a01b26cf3078e2303175e6456c3a3d9de}{}\label{classTwig__Lexer_a01b26cf3078e2303175e6456c3a3d9de}
+
+\item 
+{\bfseries \$cursor}\hypertarget{classTwig__Lexer_af208a192762ba6f4892d724007adbce9}{}\label{classTwig__Lexer_af208a192762ba6f4892d724007adbce9}
+
+\item 
+{\bfseries \$lineno}\hypertarget{classTwig__Lexer_aa5582682754276bf05bce56dd09eee40}{}\label{classTwig__Lexer_aa5582682754276bf05bce56dd09eee40}
+
+\item 
+{\bfseries \$end}\hypertarget{classTwig__Lexer_a4e8933437d67282de70614bc7c3a3a9b}{}\label{classTwig__Lexer_a4e8933437d67282de70614bc7c3a3a9b}
+
+\item 
+{\bfseries \$state}\hypertarget{classTwig__Lexer_aaf888bcb242290ba26488383d7c84e23}{}\label{classTwig__Lexer_aaf888bcb242290ba26488383d7c84e23}
+
+\item 
+{\bfseries \$states}\hypertarget{classTwig__Lexer_a574f75e16b526841b7b55b2747f1d9da}{}\label{classTwig__Lexer_a574f75e16b526841b7b55b2747f1d9da}
+
+\item 
+{\bfseries \$brackets}\hypertarget{classTwig__Lexer_ae81c3d56f0713d83dd45703282cc9e32}{}\label{classTwig__Lexer_ae81c3d56f0713d83dd45703282cc9e32}
+
+\item 
+{\bfseries \$env}\hypertarget{classTwig__Lexer_a6fd38d0a09229e3e312d0e256b9cf4be}{}\label{classTwig__Lexer_a6fd38d0a09229e3e312d0e256b9cf4be}
+
+\item 
+{\bfseries \$filename}\hypertarget{classTwig__Lexer_af298a7bf3796892e65a402e92a87e562}{}\label{classTwig__Lexer_af298a7bf3796892e65a402e92a87e562}
+
+\item 
+{\bfseries \$options}\hypertarget{classTwig__Lexer_a5647297a556dd308628ffebad6598bff}{}\label{classTwig__Lexer_a5647297a556dd308628ffebad6598bff}
+
+\item 
+{\bfseries \$regexes}\hypertarget{classTwig__Lexer_a49501f23977bc9375e8fafe5cac9d915}{}\label{classTwig__Lexer_a49501f23977bc9375e8fafe5cac9d915}
+
+\item 
+{\bfseries \$position}\hypertarget{classTwig__Lexer_af5529b74bafbf4235b125e32055b073c}{}\label{classTwig__Lexer_af5529b74bafbf4235b125e32055b073c}
+
+\item 
+{\bfseries \$positions}\hypertarget{classTwig__Lexer_abba7aee439d6b004c2aef033059a3bca}{}\label{classTwig__Lexer_abba7aee439d6b004c2aef033059a3bca}
+
+\item 
+{\bfseries \$current\+Var\+Block\+Line}\hypertarget{classTwig__Lexer_a34fa45b55e5fa74a3447321ebca20b40}{}\label{classTwig__Lexer_a34fa45b55e5fa74a3447321ebca20b40}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lexes a template string.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Lexer@{Twig\+\_\+\+Lexer}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Twig\+\_\+\+Lexer@{Twig\+\_\+\+Lexer}}
+\subsubsection[{\texorpdfstring{tokenize(\$code, \$filename=null)}{tokenize($code, $filename=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Lexer\+::tokenize (
+\begin{DoxyParamCaption}
+\item[{}]{\$code, }
+\item[{}]{\$filename = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Lexer_a073857c95bd883cb7a816e30336e4bbf}{}\label{classTwig__Lexer_a073857c95bd883cb7a816e30336e4bbf}
+\{Tokenizes a source code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code \\
+\hline
+string & {\em \$filename} & A unique identifier for the source code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__TokenStream}{Twig\+\_\+\+Token\+Stream} A token stream instance
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When the code is syntactically wrong\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interfaceTwig__LexerInterface_af2c85f855d218144809f104bdc90213f}{Twig\+\_\+\+Lexer\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/Lexer.\+php\end{DoxyCompactItemize}

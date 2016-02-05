@@ -1,5 +1,7 @@
 <?php
 
+namespace src\controller;
+
 /**
  * Class TestController
  * Premier controller contenant des tests

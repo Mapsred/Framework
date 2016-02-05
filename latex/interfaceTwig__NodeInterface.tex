@@ -1,0 +1,55 @@
+\hypertarget{interfaceTwig__NodeInterface}{}\section{Twig\+\_\+\+Node\+Interface Interface Reference}
+\label{interfaceTwig__NodeInterface}\index{Twig\+\_\+\+Node\+Interface@{Twig\+\_\+\+Node\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Node\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceTwig__NodeInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceTwig__NodeInterface_a8d549ab245f11ac9c2d71b8de6f669e6}{compile} (\hyperlink{classTwig__Compiler}{Twig\+\_\+\+Compiler} \$compiler)
+\item 
+{\bfseries get\+Line} ()\hypertarget{interfaceTwig__NodeInterface_a7ddf1da3fdba4d657ca393f704a44bb0}{}\label{interfaceTwig__NodeInterface_a7ddf1da3fdba4d657ca393f704a44bb0}
+
+\item 
+{\bfseries get\+Node\+Tag} ()\hypertarget{interfaceTwig__NodeInterface_a6304606358cf547e88484b5771570d2e}{}\label{interfaceTwig__NodeInterface_a6304606358cf547e88484b5771570d2e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a node in the A\+ST.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000033}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Node\+Interface@{Twig\+\_\+\+Node\+Interface}!compile@{compile}}
+\index{compile@{compile}!Twig\+\_\+\+Node\+Interface@{Twig\+\_\+\+Node\+Interface}}
+\subsubsection[{\texorpdfstring{compile(\+Twig\+\_\+\+Compiler \$compiler)}{compile(Twig_Compiler $compiler)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Node\+Interface\+::compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Compiler}}]{\$compiler}
+\end{DoxyParamCaption}
+)}\hypertarget{interfaceTwig__NodeInterface_a8d549ab245f11ac9c2d71b8de6f669e6}{}\label{interfaceTwig__NodeInterface_a8d549ab245f11ac9c2d71b8de6f669e6}
+Compiles the node to P\+HP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTwig__Compiler}{Twig\+\_\+\+Compiler} & {\em \$compiler} & A \hyperlink{classTwig__Compiler}{Twig\+\_\+\+Compiler} instance \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classTwig__Node_a098d5e9aa1d2b215dd04ffe92d05022d}{Twig\+\_\+\+Node}, \hyperlink{classTwig__Node__Expression__Array_aee35a1d21bfd56bdf065c24501a44235}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Array}, \hyperlink{classTwig__Node__Expression__Test__Defined_a2b142989531d8eaaa809ef32c2d8e29d}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Defined}, \hyperlink{classTwig__Node__Module_a338b8fca467ae8d1e50fc73d99e59fa4}{Twig\+\_\+\+Node\+\_\+\+Module}, \hyperlink{classTwig__Node__Expression__Filter__Default_a3acdce57e7eef8762df3720ae6e76bca}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Filter\+\_\+\+Default}, \hyperlink{classTwig__Node__Set_aa4bd2aebe79c9218f9823b871069c44c}{Twig\+\_\+\+Node\+\_\+\+Set}, \hyperlink{classTwig__Node__For_ae32b621833e0ab0ca7bc86d24c1331b4}{Twig\+\_\+\+Node\+\_\+\+For}, \hyperlink{classTwig__Node__Macro_ade4a55268afc85bf997ee37207defe65}{Twig\+\_\+\+Node\+\_\+\+Macro}, \hyperlink{classTwig__Node__AutoEscape_acd5e6a9672690afb0cf024c53482069b}{Twig\+\_\+\+Node\+\_\+\+Auto\+Escape}, \hyperlink{classTwig__Node__CheckSecurity_a07e3a75cb6386db52f700654804db466}{Twig\+\_\+\+Node\+\_\+\+Check\+Security}, \hyperlink{classTwig__Node__Expression__ExtensionReference_a6907d184d47cf5deee5d80fd20373e85}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Extension\+Reference}, \hyperlink{classTwig__Profiler__Node__EnterProfile_a01869f0ba21ff007bbac03f139f00058}{Twig\+\_\+\+Profiler\+\_\+\+Node\+\_\+\+Enter\+Profile}, \hyperlink{classTwig__Profiler__Node__LeaveProfile_aafc26d7d88bf6e7b8c8e2552827c722c}{Twig\+\_\+\+Profiler\+\_\+\+Node\+\_\+\+Leave\+Profile}, \hyperlink{classTwig__Node__Spaceless_aeb37ddd1ce7595baa8f43fc03c0a7e4e}{Twig\+\_\+\+Node\+\_\+\+Spaceless}, \hyperlink{classTwig__Node__Block_acdef30a7bb5ce187d63b35201bc179da}{Twig\+\_\+\+Node\+\_\+\+Block}, \hyperlink{classTwig__Node__BlockReference_ae403d69579c887f5f40d801eade2ba73}{Twig\+\_\+\+Node\+\_\+\+Block\+Reference}, \hyperlink{classTwig__Node__Expression__BlockReference_a23537b6fa6673ea811cbbcc80babf9e1}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Block\+Reference}, \hyperlink{classTwig__Node__Expression__Name_a7973133f15bbbcc8cc0bcf2a7c64ff49}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Name}, \hyperlink{classTwig__Node__Expression__Parent_af80ce506c5ba596a30b6a0d12e47355e}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Parent}, \hyperlink{classTwig__Node__Expression__Test__Constant_af3c6258c4ebeed2ee4c01a6fa6871d5d}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Constant}, \hyperlink{classTwig__Node__If_a7a584148443494a02b9ea75efa1fcc85}{Twig\+\_\+\+Node\+\_\+\+If}, \hyperlink{classTwig__Node__Include_a44452b655f081b2b7566278f42def29f}{Twig\+\_\+\+Node\+\_\+\+Include}, \hyperlink{classTwig__Node__Print_a5b047d0b5682c674790218286bc03966}{Twig\+\_\+\+Node\+\_\+\+Print}, \hyperlink{classTwig__Node__Text_a4efe04c60def43515fd64ab24c5d8c90}{Twig\+\_\+\+Node\+\_\+\+Text}, \hyperlink{classTwig__Node__Do_a91c78bd45b233b4f573fb2e0b119b7c7}{Twig\+\_\+\+Node\+\_\+\+Do}, \hyperlink{classTwig__Node__Flush_a7e2a593cf2d06dbe2b600368ce9b4092}{Twig\+\_\+\+Node\+\_\+\+Flush}, \hyperlink{classTwig__Node__ForLoop_af8309ab127b78a9050b332334ca2c290}{Twig\+\_\+\+Node\+\_\+\+For\+Loop}, \hyperlink{classTwig__Node__Import_a34ba3386e9ea9cac2b24ad1bf83c0815}{Twig\+\_\+\+Node\+\_\+\+Import}, \hyperlink{classTwig__Node__Sandbox_ad82cdbb2e2f28f7123f6fb5571dcd5ea}{Twig\+\_\+\+Node\+\_\+\+Sandbox}, \hyperlink{classTwig__Node__SandboxedPrint_ab54c817615a5ccc071513e7e1e4cb724}{Twig\+\_\+\+Node\+\_\+\+Sandboxed\+Print}, \hyperlink{classTwig__Node__Expression__Test__Divisibleby_a1ed4be345d9803223be021b9a852c27e}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Divisibleby}, \hyperlink{classTwig__Node__Expression__Test__Even_a39a12ae5000888db8a06d9b2665bcbab}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Even}, \hyperlink{classTwig__Node__Expression__Test__Null_ab4f800407bb558a77dd5239e8c609d95}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Null}, \hyperlink{classTwig__Node__Expression__Test__Odd_a904a185e02cfe92a998cc0ad6b327bf6}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Odd}, \hyperlink{classTwig__Node__Expression__MethodCall_adcf0553eed0d23ba9a5e66460a5f353d}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Method\+Call}, \hyperlink{classTwig__Node__Expression__Binary_aecc3380c7e97249e186397c9e8eaa148}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary}, \hyperlink{classTwig__Node__Expression__Conditional_ac5ebdaf7458e6d0376b7de8b3a04720a}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Conditional}, \hyperlink{classTwig__Node__Expression__Constant_a9203b18e971c79443d2f12b102f1d967}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Constant}, \hyperlink{classTwig__Node__Expression__Filter_a5358840b2bf6405c5d99ffa8b93e8f0d}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Filter}, \hyperlink{classTwig__Node__Expression__GetAttr_ad1a258f3438478cf0db8db8a4cafd119}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Get\+Attr}, \hyperlink{classTwig__Node__Expression__Test__Sameas_a860041620edef8b64757cda447f46a77}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test\+\_\+\+Sameas}, \hyperlink{classTwig__Node__Expression__Unary_ab0b85076cfa0e7bb983684deecee6e3c}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Unary}, \hyperlink{classTwig__Node__SetTemp_aeb6490c7c80b58414dad25d1d9f5d1f2}{Twig\+\_\+\+Node\+\_\+\+Set\+Temp}, \hyperlink{classTwig__Node__Expression__Function_affba9347f7efe22ae3e0aea16cb0ea4e}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Function}, \hyperlink{classTwig__Node__Expression__TempName_a6394f83c8067382d16ba2b484cda3025}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Temp\+Name}, \hyperlink{classTwig__Node__Expression__Test_a9ea7b89cd346653fb1de709a3aee64e5}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Test}, \hyperlink{classTwig__Node__Expression__AssignName_a930471c6aab9b62bfcfb5ff20d99cdc5}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Assign\+Name}, \hyperlink{classTwig__Node__Expression__Binary__EndsWith_a93d26c9497ef8e48964ca77db526b418}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Ends\+With}, \hyperlink{classTwig__Node__Expression__Binary__FloorDiv_aa40334a273d71856900f5893938c6e9e}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Floor\+Div}, \hyperlink{classTwig__Node__Expression__Binary__In_a963e1be6a7cdca12c7b6bec084bc7003}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+In}, \hyperlink{classTwig__Node__Expression__Binary__Matches_a301198485261d61b774170209ee68fa0}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Matches}, \hyperlink{classTwig__Node__Expression__Binary__NotIn_a8b6e1b2bac0c28d67a346fb638030d6d}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Not\+In}, \hyperlink{classTwig__Node__Expression__Binary__Power_ade146298c606f2d202ab22137ca7a266}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Power}, \hyperlink{classTwig__Node__Expression__Binary__Range_a3ab87f75512383dd78ee56e995329ea4}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Range}, and \hyperlink{classTwig__Node__Expression__Binary__StartsWith_af72f112bc06d96159eca5c238d90827b}{Twig\+\_\+\+Node\+\_\+\+Expression\+\_\+\+Binary\+\_\+\+Starts\+With}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/Node\+Interface.\+php\end{DoxyCompactItemize}

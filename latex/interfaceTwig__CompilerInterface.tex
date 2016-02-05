@@ -1,0 +1,66 @@
+\hypertarget{interfaceTwig__CompilerInterface}{}\section{Twig\+\_\+\+Compiler\+Interface Interface Reference}
+\label{interfaceTwig__CompilerInterface}\index{Twig\+\_\+\+Compiler\+Interface@{Twig\+\_\+\+Compiler\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Compiler\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceTwig__CompilerInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceTwig__CompilerInterface_a722064922d6d385a8115a9f4396788f2}{compile} (\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} \$node)
+\item 
+\hyperlink{interfaceTwig__CompilerInterface_a22f7a974692dbe3c97020bde81f337f5}{get\+Source} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by compiler classes.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Compiler\+Interface@{Twig\+\_\+\+Compiler\+Interface}!compile@{compile}}
+\index{compile@{compile}!Twig\+\_\+\+Compiler\+Interface@{Twig\+\_\+\+Compiler\+Interface}}
+\subsubsection[{\texorpdfstring{compile(\+Twig\+\_\+\+Node\+Interface \$node)}{compile(Twig_NodeInterface $node)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Compiler\+Interface\+::compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node}
+\end{DoxyParamCaption}
+)}\hypertarget{interfaceTwig__CompilerInterface_a722064922d6d385a8115a9f4396788f2}{}\label{interfaceTwig__CompilerInterface_a722064922d6d385a8115a9f4396788f2}
+Compiles a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to compile\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceTwig__CompilerInterface}{Twig\+\_\+\+Compiler\+Interface} The current compiler instance 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Compiler\+Interface@{Twig\+\_\+\+Compiler\+Interface}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Twig\+\_\+\+Compiler\+Interface@{Twig\+\_\+\+Compiler\+Interface}}
+\subsubsection[{\texorpdfstring{get\+Source()}{getSource()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Compiler\+Interface\+::get\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{interfaceTwig__CompilerInterface_a22f7a974692dbe3c97020bde81f337f5}{}\label{interfaceTwig__CompilerInterface_a22f7a974692dbe3c97020bde81f337f5}
+Gets the current P\+HP code after compilation.
+
+\begin{DoxyReturn}{Returns}
+string The P\+HP code 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classTwig__Compiler_a51aad13f9502232ab57a2b778430c9ff}{Twig\+\_\+\+Compiler}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/Compiler\+Interface.\+php\end{DoxyCompactItemize}

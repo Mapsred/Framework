@@ -1,0 +1,91 @@
+\hypertarget{classTwig__Tests__EnvironmentTest__NodeVisitor}{}\section{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor Class Reference}
+\label{classTwig__Tests__EnvironmentTest__NodeVisitor}\index{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}}
+Inheritance diagram for Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTwig__Tests__EnvironmentTest__NodeVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTwig__Tests__EnvironmentTest__NodeVisitor_a1790c7b3d07b044e72bc94c59354f011}{enter\+Node} (\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{classTwig__Tests__EnvironmentTest__NodeVisitor_a70af2e2caea2f7b4a83b2fbc9c8b14af}{leave\+Node} (\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{classTwig__Tests__EnvironmentTest__NodeVisitor_ac191997f646f41a3e6b06e5b5e875afd}{get\+Priority} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}!enter\+Node@{enter\+Node}}
+\index{enter\+Node@{enter\+Node}!Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{enter\+Node(\+Twig\+\_\+\+Node\+Interface \$node, Twig\+\_\+\+Environment \$env)}{enterNode(Twig_NodeInterface $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor\+::enter\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Tests__EnvironmentTest__NodeVisitor_a1790c7b3d07b044e72bc94c59354f011}{}\label{classTwig__Tests__EnvironmentTest__NodeVisitor_a1790c7b3d07b044e72bc94c59354f011}
+Called before child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} The modified node 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceTwig__NodeVisitorInterface_a2113528cfac7a5e17857a7c38115e273}{Twig\+\_\+\+Node\+Visitor\+Interface}.
+
+\index{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{get\+Priority()}{getPriority()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Tests__EnvironmentTest__NodeVisitor_ac191997f646f41a3e6b06e5b5e875afd}{}\label{classTwig__Tests__EnvironmentTest__NodeVisitor_ac191997f646f41a3e6b06e5b5e875afd}
+Returns the priority for this visitor.
+
+Priority should be between -\/10 and 10 (0 is the default).
+
+\begin{DoxyReturn}{Returns}
+int The priority level 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceTwig__NodeVisitorInterface_a9ad5ef7f873c47ded2423071fa3218d3}{Twig\+\_\+\+Node\+Visitor\+Interface}.
+
+\index{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}!leave\+Node@{leave\+Node}}
+\index{leave\+Node@{leave\+Node}!Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor@{Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{leave\+Node(\+Twig\+\_\+\+Node\+Interface \$node, Twig\+\_\+\+Environment \$env)}{leaveNode(Twig_NodeInterface $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Tests\+\_\+\+Environment\+Test\+\_\+\+Node\+Visitor\+::leave\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Tests__EnvironmentTest__NodeVisitor_a70af2e2caea2f7b4a83b2fbc9c8b14af}{}\label{classTwig__Tests__EnvironmentTest__NodeVisitor_a70af2e2caea2f7b4a83b2fbc9c8b14af}
+Called after child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Node\+Interface$\vert$false The modified node or false if the node must be removed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceTwig__NodeVisitorInterface_aa37d1e8e98eb720fc633a9031f8af4a8}{Twig\+\_\+\+Node\+Visitor\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/test/\+Twig/\+Tests/Environment\+Test.\+php\end{DoxyCompactItemize}

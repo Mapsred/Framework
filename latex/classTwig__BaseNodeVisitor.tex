@@ -1,0 +1,126 @@
+\hypertarget{classTwig__BaseNodeVisitor}{}\section{Twig\+\_\+\+Base\+Node\+Visitor Class Reference}
+\label{classTwig__BaseNodeVisitor}\index{Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}}
+Inheritance diagram for Twig\+\_\+\+Base\+Node\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.548387cm]{classTwig__BaseNodeVisitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTwig__BaseNodeVisitor_a457914082923807ed3022cd09ff1d5c0}{enter\+Node} (\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{classTwig__BaseNodeVisitor_affa95ec0a2c153977d9b0dcae4122e37}{leave\+Node} (\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTwig__BaseNodeVisitor_a372ef3cc449de278f818d42248625f88}{do\+Enter\+Node} (\hyperlink{classTwig__Node}{Twig\+\_\+\+Node} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{classTwig__BaseNodeVisitor_a35fabbc0780fd0cd9fd21900d5e285ab}{do\+Leave\+Node} (\hyperlink{classTwig__Node}{Twig\+\_\+\+Node} \$node, \hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$env)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classTwig__BaseNodeVisitor}{Twig\+\_\+\+Base\+Node\+Visitor} can be used to make node visitors compatible with Twig 1.\+x and 2.\+x.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}!do\+Enter\+Node@{do\+Enter\+Node}}
+\index{do\+Enter\+Node@{do\+Enter\+Node}!Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{do\+Enter\+Node(\+Twig\+\_\+\+Node \$node, Twig\+\_\+\+Environment \$env)}{doEnterNode(Twig_Node $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Base\+Node\+Visitor\+::do\+Enter\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}\hypertarget{classTwig__BaseNodeVisitor_a372ef3cc449de278f818d42248625f88}{}\label{classTwig__BaseNodeVisitor_a372ef3cc449de278f818d42248625f88}
+Called before child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTwig__Node}{Twig\+\_\+\+Node} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classTwig__Node}{Twig\+\_\+\+Node} The modified node 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}!do\+Leave\+Node@{do\+Leave\+Node}}
+\index{do\+Leave\+Node@{do\+Leave\+Node}!Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{do\+Leave\+Node(\+Twig\+\_\+\+Node \$node, Twig\+\_\+\+Environment \$env)}{doLeaveNode(Twig_Node $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Base\+Node\+Visitor\+::do\+Leave\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}\hypertarget{classTwig__BaseNodeVisitor_a35fabbc0780fd0cd9fd21900d5e285ab}{}\label{classTwig__BaseNodeVisitor_a35fabbc0780fd0cd9fd21900d5e285ab}
+Called after child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classTwig__Node}{Twig\+\_\+\+Node} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Node$\vert$false The modified node or false if the node must be removed 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}!enter\+Node@{enter\+Node}}
+\index{enter\+Node@{enter\+Node}!Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{enter\+Node(\+Twig\+\_\+\+Node\+Interface \$node, Twig\+\_\+\+Environment \$env)}{enterNode(Twig_NodeInterface $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Base\+Node\+Visitor\+::enter\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}}\hypertarget{classTwig__BaseNodeVisitor_a457914082923807ed3022cd09ff1d5c0}{}\label{classTwig__BaseNodeVisitor_a457914082923807ed3022cd09ff1d5c0}
+\{Called before child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} The modified node
+\end{DoxyReturn}
+\} 
+
+Implements \hyperlink{interfaceTwig__NodeVisitorInterface_a2113528cfac7a5e17857a7c38115e273}{Twig\+\_\+\+Node\+Visitor\+Interface}.
+
+\index{Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}!leave\+Node@{leave\+Node}}
+\index{leave\+Node@{leave\+Node}!Twig\+\_\+\+Base\+Node\+Visitor@{Twig\+\_\+\+Base\+Node\+Visitor}}
+\subsubsection[{\texorpdfstring{leave\+Node(\+Twig\+\_\+\+Node\+Interface \$node, Twig\+\_\+\+Environment \$env)}{leaveNode(Twig_NodeInterface $node, Twig_Environment $env)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Base\+Node\+Visitor\+::leave\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}}\hypertarget{classTwig__BaseNodeVisitor_affa95ec0a2c153977d9b0dcae4122e37}{}\label{classTwig__BaseNodeVisitor_affa95ec0a2c153977d9b0dcae4122e37}
+\{Called after child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interfaceTwig__NodeInterface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Node\+Interface$\vert$false The modified node or false if the node must be removed
+\end{DoxyReturn}
+\} 
+
+Implements \hyperlink{interfaceTwig__NodeVisitorInterface_aa37d1e8e98eb720fc633a9031f8af4a8}{Twig\+\_\+\+Node\+Visitor\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/Base\+Node\+Visitor.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,296 @@
+\hypertarget{classTwig__Loader__Filesystem}{}\section{Twig\+\_\+\+Loader\+\_\+\+Filesystem Class Reference}
+\label{classTwig__Loader__Filesystem}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+Inheritance diagram for Twig\+\_\+\+Loader\+\_\+\+Filesystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTwig__Loader__Filesystem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a746a9eb85e6dda7faa53faff286afb83}{\+\_\+\+\_\+construct} (\$paths=array())
+\item 
+\hyperlink{classTwig__Loader__Filesystem_ab10da22ac700428bff81e564375e9ffa}{get\+Paths} (\$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_abc27b1703be40cb8dd8a1a0c5aeaa859}{get\+Namespaces} ()
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a1d95fd0f4985e79cd29c62e49c3aa5d4}{set\+Paths} (\$paths, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a5454d33ddcfed418f776ba17ae239635}{add\+Path} (\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a28cfe9d3519049bc41f728b3b069b3c2}{prepend\+Path} (\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a88edb359da4f65ccf5ecb68156c2b870}{get\+Source} (\$name)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a33896b87ff6eea5dd9df7a146aaffd59}{get\+Cache\+Key} (\$name)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a014a09fdc88a29129bd9a9a65d979e9f}{exists} (\$name)
+\item 
+\hyperlink{classTwig__Loader__Filesystem_a711f91783346edac8b4c645804c8ecfe}{is\+Fresh} (\$name, \$time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classTwig__Loader__Filesystem_a50e08d4ee489fcf7788fa4197ce7fc38}{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} = \textquotesingle{}\+\_\+\+\_\+main\+\_\+\+\_\+\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries find\+Template} (\$name)\hypertarget{classTwig__Loader__Filesystem_aebffda0b78e6f6286359981825b60aa1}{}\label{classTwig__Loader__Filesystem_aebffda0b78e6f6286359981825b60aa1}
+
+\item 
+{\bfseries parse\+Name} (\$name, \$default=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE)\hypertarget{classTwig__Loader__Filesystem_a57486fcf14301c39778a396540b2854d}{}\label{classTwig__Loader__Filesystem_a57486fcf14301c39778a396540b2854d}
+
+\item 
+{\bfseries normalize\+Name} (\$name)\hypertarget{classTwig__Loader__Filesystem_ad9e171393ab22bdf6a4517f68350cbac}{}\label{classTwig__Loader__Filesystem_ad9e171393ab22bdf6a4517f68350cbac}
+
+\item 
+{\bfseries validate\+Name} (\$name)\hypertarget{classTwig__Loader__Filesystem_af531f0a3353ebdaecd352b144edfb79f}{}\label{classTwig__Loader__Filesystem_af531f0a3353ebdaecd352b144edfb79f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$paths} = array()\hypertarget{classTwig__Loader__Filesystem_aace741d9bbb405c800b24471f0702569}{}\label{classTwig__Loader__Filesystem_aace741d9bbb405c800b24471f0702569}
+
+\item 
+{\bfseries \$cache} = array()\hypertarget{classTwig__Loader__Filesystem_a91c49737852b02071ab24a3a2430818a}{}\label{classTwig__Loader__Filesystem_a91c49737852b02071ab24a3a2430818a}
+
+\item 
+{\bfseries \$error\+Cache} = array()\hypertarget{classTwig__Loader__Filesystem_a05cef3c1301a48497d0d15a2b52e8a0e}{}\label{classTwig__Loader__Filesystem_a05cef3c1301a48497d0d15a2b52e8a0e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads template from the filesystem.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$paths=array())}{__construct($paths=array())}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$paths = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a746a9eb85e6dda7faa53faff286afb83}{}\label{classTwig__Loader__Filesystem_a746a9eb85e6dda7faa53faff286afb83}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & A path or an array of paths where to look for templates \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!add\+Path@{add\+Path}}
+\index{add\+Path@{add\+Path}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{add\+Path(\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)}{addPath($path, $namespace=self::MAIN_NAMESPACE)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::add\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a5454d33ddcfed418f776ba17ae239635}{}\label{classTwig__Loader__Filesystem_a5454d33ddcfed418f776ba17ae239635}
+Adds a path where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A path where to look for templates \\
+\hline
+string & {\em \$namespace} & A path name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & \\
+\hline
+\end{DoxyExceptions}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!exists@{exists}}
+\index{exists@{exists}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{exists(\$name)}{exists($name)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a014a09fdc88a29129bd9a9a65d979e9f}{}\label{classTwig__Loader__Filesystem_a014a09fdc88a29129bd9a9a65d979e9f}
+\{Check if we have the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to check if we can load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool If the template source code is handled by this loader or not
+\end{DoxyReturn}
+\} 
+
+Implements \hyperlink{interfaceTwig__ExistsLoaderInterface_acbf436dcf2af2a8179abd8bd0266b24d}{Twig\+\_\+\+Exists\+Loader\+Interface}.
+
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Cache\+Key@{get\+Cache\+Key}}
+\index{get\+Cache\+Key@{get\+Cache\+Key}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{get\+Cache\+Key(\$name)}{getCacheKey($name)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::get\+Cache\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a33896b87ff6eea5dd9df7a146aaffd59}{}\label{classTwig__Loader__Filesystem_a33896b87ff6eea5dd9df7a146aaffd59}
+\{Gets the cache key to use for the cache for a given template name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The cache key
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interfaceTwig__LoaderInterface_a0c254445d05885ae35272575ab83370a}{Twig\+\_\+\+Loader\+Interface}.
+
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Namespaces@{get\+Namespaces}}
+\index{get\+Namespaces@{get\+Namespaces}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{get\+Namespaces()}{getNamespaces()}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::get\+Namespaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_abc27b1703be40cb8dd8a1a0c5aeaa859}{}\label{classTwig__Loader__Filesystem_abc27b1703be40cb8dd8a1a0c5aeaa859}
+Returns the path namespaces.
+
+The main namespace is always defined.
+
+\begin{DoxyReturn}{Returns}
+array The array of defined namespaces 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Paths@{get\+Paths}}
+\index{get\+Paths@{get\+Paths}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{get\+Paths(\$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)}{getPaths($namespace=self::MAIN_NAMESPACE)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::get\+Paths (
+\begin{DoxyParamCaption}
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_ab10da22ac700428bff81e564375e9ffa}{}\label{classTwig__Loader__Filesystem_ab10da22ac700428bff81e564375e9ffa}
+Returns the paths to the templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & A path namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array of paths where to look for templates 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{get\+Source(\$name)}{getSource($name)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::get\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a88edb359da4f65ccf5ecb68156c2b870}{}\label{classTwig__Loader__Filesystem_a88edb359da4f65ccf5ecb68156c2b870}
+\{Gets the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The template source code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interfaceTwig__LoaderInterface_a8a7e7a9d2a44e12db931d9321e61713c}{Twig\+\_\+\+Loader\+Interface}.
+
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!is\+Fresh@{is\+Fresh}}
+\index{is\+Fresh@{is\+Fresh}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{is\+Fresh(\$name, \$time)}{isFresh($name, $time)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::is\+Fresh (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$time}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a711f91783346edac8b4c645804c8ecfe}{}\label{classTwig__Loader__Filesystem_a711f91783346edac8b4c645804c8ecfe}
+\{Returns true if the template is still fresh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+int & {\em \$time} & Timestamp of the last modification time of the cached template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the template is fresh, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interfaceTwig__LoaderInterface_a072d6f33f65cd576d37df05041ad5eba}{Twig\+\_\+\+Loader\+Interface}.
+
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!prepend\+Path@{prepend\+Path}}
+\index{prepend\+Path@{prepend\+Path}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{prepend\+Path(\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)}{prependPath($path, $namespace=self::MAIN_NAMESPACE)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::prepend\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a28cfe9d3519049bc41f728b3b069b3c2}{}\label{classTwig__Loader__Filesystem_a28cfe9d3519049bc41f728b3b069b3c2}
+Prepends a path where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A path where to look for templates \\
+\hline
+string & {\em \$namespace} & A path name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classTwig__Error__Loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & \\
+\hline
+\end{DoxyExceptions}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!set\+Paths@{set\+Paths}}
+\index{set\+Paths@{set\+Paths}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{set\+Paths(\$paths, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)}{setPaths($paths, $namespace=self::MAIN_NAMESPACE)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::set\+Paths (
+\begin{DoxyParamCaption}
+\item[{}]{\$paths, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Loader__Filesystem_a1d95fd0f4985e79cd29c62e49c3aa5d4}{}\label{classTwig__Loader__Filesystem_a1d95fd0f4985e79cd29c62e49c3aa5d4}
+Sets the paths where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & A path or an array of paths where to look for templates \\
+\hline
+string & {\em \$namespace} & A path namespace \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\texorpdfstring{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}{MAIN_NAMESPACE}}]{\setlength{\rightskip}{0pt plus 5cm}const Twig\+\_\+\+Loader\+\_\+\+Filesystem\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE = \textquotesingle{}\+\_\+\+\_\+main\+\_\+\+\_\+\textquotesingle{}}\hypertarget{classTwig__Loader__Filesystem_a50e08d4ee489fcf7788fa4197ce7fc38}{}\label{classTwig__Loader__Filesystem_a50e08d4ee489fcf7788fa4197ce7fc38}
+Identifier of the main namespace. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/\+Loader/Filesystem.\+php\end{DoxyCompactItemize}

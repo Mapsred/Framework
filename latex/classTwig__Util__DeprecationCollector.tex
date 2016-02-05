@@ -1,0 +1,66 @@
+\hypertarget{classTwig__Util__DeprecationCollector}{}\section{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector Class Reference}
+\label{classTwig__Util__DeprecationCollector}\index{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector@{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\hyperlink{classTwig__Environment}{Twig\+\_\+\+Environment} \$twig)\hypertarget{classTwig__Util__DeprecationCollector_ab02b255b93896e858112f8b1542824e3}{}\label{classTwig__Util__DeprecationCollector_ab02b255b93896e858112f8b1542824e3}
+
+\item 
+\hyperlink{classTwig__Util__DeprecationCollector_ae5b5baeadeab3820574d6c1d26e757c0}{collect\+Dir} (\$dir, \$ext= \textquotesingle{}.twig\textquotesingle{})
+\item 
+\hyperlink{classTwig__Util__DeprecationCollector_a6d9f2c3329ecc2ad63304d4b1bc71694}{collect} (Iterator \$iterator)
+\item 
+{\bfseries error\+Handler} (\$type, \$msg)\hypertarget{classTwig__Util__DeprecationCollector_a75dd106f39f032447b46c2c570986d15}{}\label{classTwig__Util__DeprecationCollector_a75dd106f39f032447b46c2c570986d15}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector@{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector}!collect@{collect}}
+\index{collect@{collect}!Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector@{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector}}
+\subsubsection[{\texorpdfstring{collect(\+Iterator \$iterator)}{collect(Iterator $iterator)}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector\+::collect (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{\$iterator}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Util__DeprecationCollector_a6d9f2c3329ecc2ad63304d4b1bc71694}{}\label{classTwig__Util__DeprecationCollector_a6d9f2c3329ecc2ad63304d4b1bc71694}
+Returns deprecations for passed templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Iterator & {\em \$iterator} & An iterator of templates (where keys are template names and values the contents of the template)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array() An array of deprecations 
+\end{DoxyReturn}
+\index{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector@{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector}!collect\+Dir@{collect\+Dir}}
+\index{collect\+Dir@{collect\+Dir}!Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector@{Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector}}
+\subsubsection[{\texorpdfstring{collect\+Dir(\$dir, \$ext= \textquotesingle{}.\+twig\textquotesingle{})}{collectDir($dir, $ext= '.twig')}}]{\setlength{\rightskip}{0pt plus 5cm}Twig\+\_\+\+Util\+\_\+\+Deprecation\+Collector\+::collect\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir, }
+\item[{}]{\$ext = {\ttfamily \textquotesingle{}.twig\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classTwig__Util__DeprecationCollector_ae5b5baeadeab3820574d6c1d26e757c0}{}\label{classTwig__Util__DeprecationCollector_ae5b5baeadeab3820574d6c1d26e757c0}
+Returns deprecations for templates contained in a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & A directory where templates are stored \\
+\hline
+string & {\em \$ext} & Limit the loaded templates by extension\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array() An array of deprecations 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/twig/twig/lib/\+Twig/\+Util/Deprecation\+Collector.\+php\end{DoxyCompactItemize}

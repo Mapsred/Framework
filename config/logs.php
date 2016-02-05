@@ -6,6 +6,7 @@
  * Time: 10:20
  */
 
+namespace config;
 
 /**
  * @param $txt - le message à ajouter aux logs

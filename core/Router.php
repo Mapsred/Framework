@@ -1,9 +1,14 @@
 <?php
-$loader = new Twig_Loader_Filesystem(DIR_TMPL); // Dossier contenant les templates
-$twig = new Twig_Environment($loader, array( 'cache' => false ));
+
+namespace core;
+use config;
+
+$loader = new \Twig_Loader_Filesystem(DIR_TMPL); // Dossier contenant les templates
+$twig = new \Twig_Environment($loader, array( 'cache' => false ));
 
 class Router {
     public function run($route) {
+        var_dump($route);
         global $routes;
         //Si la route n'est pas dans le tableau des routes - on en déduit qu'il s'agit d'une route à argument
         if (!in_array($route, $routes)) {
@@ -48,10 +53,10 @@ class Router {
                 return $controller->$parts[1]();
             }
         } else {
-            addErrorLog("No route for :".$route, __FILE__);
+            config\addErrorLog("No route for :".$route, __FILE__);
             header("HTTP/1.0 404 Not Found");
             require_once("../web/error/404.php");
-            throw new Exception('No route for : ' . $route);
+            throw new \Exception('No route for : ' . $route);
         }
     }
 }

@@ -1,0 +1,98 @@
+\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper}{}\section{Symfony\textbackslash{}Component\textbackslash{}Yaml\textbackslash{}Unescaper Class Reference}
+\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper}\index{Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper@{Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a8fb4ebd96ef685c8f7ee984180dfaad4}{unescape\+Single\+Quoted\+String} (\$value)
+\item 
+\hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_aac9bde427279583d9c622191fdb1920b}{unescape\+Double\+Quoted\+String} (\$value)
+\item 
+\hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a6c7e44b0e009cea76e0e590af22c83b9}{unescape\+Character} (\$value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_acf22c4bb358a547676976c505ac8a40d}{E\+N\+C\+O\+D\+I\+NG} = \textquotesingle{}U\+TF-\/8\textquotesingle{}
+\item 
+const \hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a7ac46527215d1d9abb99d5d046ada1ef}{R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER} = \char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}(\mbox{[}0abt\textbackslash{}tnvfre \textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\+N\+\_\+\+L\+P\mbox{]}$\vert$x\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{2\}$\vert$u\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{4\}$\vert$\+U\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{8\})\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Unescaper}{Unescaper} encapsulates unescaping rules for single and double-\/quoted Y\+A\+ML strings.
+
+\begin{DoxyAuthor}{Author}
+Matthew Lewinski \href{mailto:matthew@lewinski.org}{\tt matthew@lewinski.\+org} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}!unescape\+Character@{unescape\+Character}}
+\index{unescape\+Character@{unescape\+Character}!Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}}
+\subsubsection[{\texorpdfstring{unescape\+Character(\$value)}{unescapeCharacter($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper\+::unescape\+Character (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a6c7e44b0e009cea76e0e590af22c83b9}{}\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a6c7e44b0e009cea76e0e590af22c83b9}
+Unescapes a character that was found in a double-\/quoted string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & An escaped character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The unescaped character 
+\end{DoxyReturn}
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}!unescape\+Double\+Quoted\+String@{unescape\+Double\+Quoted\+String}}
+\index{unescape\+Double\+Quoted\+String@{unescape\+Double\+Quoted\+String}!Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}}
+\subsubsection[{\texorpdfstring{unescape\+Double\+Quoted\+String(\$value)}{unescapeDoubleQuotedString($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper\+::unescape\+Double\+Quoted\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_aac9bde427279583d9c622191fdb1920b}{}\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_aac9bde427279583d9c622191fdb1920b}
+Unescapes a double quoted string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & A double quoted string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The unescaped string. 
+\end{DoxyReturn}
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}!unescape\+Single\+Quoted\+String@{unescape\+Single\+Quoted\+String}}
+\index{unescape\+Single\+Quoted\+String@{unescape\+Single\+Quoted\+String}!Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}}
+\subsubsection[{\texorpdfstring{unescape\+Single\+Quoted\+String(\$value)}{unescapeSingleQuotedString($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper\+::unescape\+Single\+Quoted\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a8fb4ebd96ef685c8f7ee984180dfaad4}{}\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a8fb4ebd96ef685c8f7ee984180dfaad4}
+Unescapes a single quoted string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & A single quoted string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The unescaped string. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}!E\+N\+C\+O\+D\+I\+NG@{E\+N\+C\+O\+D\+I\+NG}}
+\index{E\+N\+C\+O\+D\+I\+NG@{E\+N\+C\+O\+D\+I\+NG}!Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}}
+\subsubsection[{\texorpdfstring{E\+N\+C\+O\+D\+I\+NG}{ENCODING}}]{\setlength{\rightskip}{0pt plus 5cm}const Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper\+::\+E\+N\+C\+O\+D\+I\+NG = \textquotesingle{}U\+TF-\/8\textquotesingle{}}\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_acf22c4bb358a547676976c505ac8a40d}{}\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_acf22c4bb358a547676976c505ac8a40d}
+\hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Parser}{Parser} and \hyperlink{classSymfony_1_1Component_1_1Yaml_1_1Inline}{Inline} assume U\+T\+F-\/8 encoding, so escaped Unicode characters must be converted to that encoding.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]since version 2.\+5, to be removed in 3.\+0\end{DoxyRefDesc}
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}!R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER@{R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER}}
+\index{R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER@{R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER}!Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Unescaper}}
+\subsubsection[{\texorpdfstring{R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER}{REGEX_ESCAPED_CHARACTER}}]{\setlength{\rightskip}{0pt plus 5cm}const Symfony\textbackslash{}\+Component\textbackslash{}\+Yaml\textbackslash{}\+Unescaper\+::\+R\+E\+G\+E\+X\+\_\+\+E\+S\+C\+A\+P\+E\+D\+\_\+\+C\+H\+A\+R\+A\+C\+T\+ER = \char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}(\mbox{[}0abt\textbackslash{}tnvfre \textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\+N\+\_\+\+L\+P\mbox{]}$\vert$x\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{2\}$\vert$u\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{4\}$\vert$\+U\mbox{[}0-\/9a-\/f\+A-\/\+F\mbox{]}\{8\})\char`\"{}}\hypertarget{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a7ac46527215d1d9abb99d5d046ada1ef}{}\label{classSymfony_1_1Component_1_1Yaml_1_1Unescaper_a7ac46527215d1d9abb99d5d046ada1ef}
+Regex fragment that matches an escaped character in a double quoted string. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/orm/vendor/symfony/yaml/Unescaper.\+php\end{DoxyCompactItemize}
