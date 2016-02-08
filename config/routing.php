@@ -1,7 +1,5 @@
 <?php
 
-namespace config;
-
 global $routes;
 /**
  * Premier élément : la route

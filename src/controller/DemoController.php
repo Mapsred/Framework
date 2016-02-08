@@ -7,7 +7,6 @@
  * Time: 17:29
  */
 
-namespace src\controller;
 /**
  * Class DemoController
  * Chemins utilisés pour la démonstration lors de la soutenance du projet

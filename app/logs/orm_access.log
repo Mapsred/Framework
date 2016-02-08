@@ -16,3 +16,4 @@
 [02/04/2016 05:51:45 pm] INSERT INTO post(id, title, content) VALUES(?, ?, ?)
 [02/04/2016 05:51:59 pm] INSERT INTO post(id, title, content) VALUES(?, ?, ?)
 [02/04/2016 05:52:13 pm] INSERT INTO post(id, title, content) VALUES(?, ?, ?)
+[02/08/2016 02:27:20 pm] INSERT INTO post(id, title, content) VALUES(?, ?, ?)
