@@ -65,8 +65,14 @@ class DemoController
         return TRUE;
     }
 
-
-
+    /**
+     * @return bool
+     * @road  /orm/select
+     */
+    public function ormSelectTest(){
+        include_once "../src/project/ormSelectTest.php";
+        return TRUE;
+    }
 
 
 

@@ -5,3 +5,4 @@ vendor
 html
 latex
 config/ormInstance.php
+*log

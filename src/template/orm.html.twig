@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ORM Select Query</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>ORM Select Query</h1>
+
+<h4>Contenu de la base de données Post : </h4>
+
+<ul id="navigation">
+    {% for item in navigation %}
+        <li>id: {{ item.0 }} / titre: {{ item.1 }} / contenu: {{ item.2 }} </li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>

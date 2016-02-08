@@ -30,5 +30,6 @@ $routes = [
     '/test/arg/{arggg}/{bien}/{bn}' => 'Demo:argu', //Route à 3 éléments, il n'y a pas de limite au nombre
     '/tw/args/{arggg}/{bien}' => 'Demo:tw_args', //Route utilisant twig et des arguments
     '/orm' => 'Demo:ormTest', // Route insérant des objets dans la base de données à l'aide de l'ORM
+    '/orm/select' => 'Demo:ormSelectTest', // Route insérant des objets dans la base de données à l'aide de l'ORM
 
 ];
