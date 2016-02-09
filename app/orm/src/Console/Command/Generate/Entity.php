@@ -110,7 +110,8 @@ class Entity
         }
 
         $code .= "}";
-        file_put_contents('Entity/'.$this->_className.'.php', $code);
+//        var_dump(DIR_ENTITY);
+        file_put_contents(DIR_ENTITY.$this->_className.'.php', $code);
 
         $code = "<?php \n \n";
         $code .= "namespace Entity; \n \n";
@@ -118,7 +119,7 @@ class Entity
         $code .= "class ".$this->_className."Repository extends Repository \n{ \n";
         $code .= "} \n \n";
 
-        file_put_contents('Entity/'.$this->_className.'Repository.php', $code);
+        file_put_contents(DIR_ENTITY.$this->_className.'Repository.php', $code);
 
     }
 

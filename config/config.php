@@ -22,6 +22,7 @@ define('DIR_VENDOR', DIR_ROOT.'vendor');
 define('DIR_APP', DIR_ROOT.'app');
 define('DIR_LOG', DIR_APP.'/logs');
 define('DIR_ORM', DIR_APP.'/orm');
+define('DIR_ENTITY', DIR_ORM.'/src/Entity/');
 /**
  * Require des fichier nécessaires au fonctionnement
  */

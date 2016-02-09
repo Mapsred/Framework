@@ -6,7 +6,10 @@
  * Time: 10:58
  */
 
-require 'vendor/autoload.php';
+//require 'vendor/autoload.php';
+require_once ("../../config/config.php");
+//pgp generate.php generate:entity action Action
 
-$Connection = new \ORM\Connection('localhost', 'orm', 'root', 'abx24z4hb9zX');
+global $Connection;
+
 $Console = new \ORM\Console\Console('\\Entity', $argv);
