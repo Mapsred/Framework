@@ -40,6 +40,7 @@ Créer le fichier ormInstance.php et instancer l'ORM :
 `ormInstance.php`
 
 `$Connection = new \ORM\Connection('host', 'database', 'user', 'password');`
+
 `$EntityManager = new \ORM\Entity\Manager();`
 
 
