@@ -35,6 +35,13 @@ Ajout des fichiers nécessaires :
 
 `...`
 
+Créer le fichier ormInstance.php et instancer l'ORM :
+
+`ormInstance.php`
+
+`$Connection = new \ORM\Connection('host', 'database', 'user', 'password');`
+`$EntityManager = new \ORM\Entity\Manager();`
+
 
 #### Dossier src - le dossier accessible par l'utilisateur du framework
 
